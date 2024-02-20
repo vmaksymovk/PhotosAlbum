@@ -11,7 +11,8 @@ import SwiftUI
 struct PhotosAlbumApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let user = User(email: "", password: "", username: "")
+            ContentView(viewModel: UserViewModel(user: user))
         }
     }
 }
